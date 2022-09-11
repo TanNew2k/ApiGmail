@@ -1,0 +1,10 @@
+D:\C#_Progarm\Test\Test\bin\Debug\Test.exe.config
+D:\C#_Progarm\Test\Test\bin\Debug\Test.exe
+D:\C#_Progarm\Test\Test\bin\Debug\Test.pdb
+D:\C#_Progarm\Test\Test\bin\Debug\Newtonsoft.Json.dll
+D:\C#_Progarm\Test\Test\bin\Debug\Newtonsoft.Json.xml
+D:\C#_Progarm\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\C#_Progarm\Test\Test\obj\Debug\Test.csproj.CopyComplete
+D:\C#_Progarm\Test\Test\obj\Debug\Test.exe
+D:\C#_Progarm\Test\Test\obj\Debug\Test.pdb
+D:\C#_Progarm\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
