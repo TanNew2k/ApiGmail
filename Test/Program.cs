@@ -12,7 +12,7 @@ class Program
     static void Main()
     {
         const string clientID = "";
-        const string clientSecret = "f";
+        const string clientSecret = "";
 
         // Generates code verifier value.
         string codeVerifier = RandomDataBase64Url(32);
