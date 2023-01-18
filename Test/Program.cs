@@ -198,6 +198,27 @@ class Program
         }
     }
 
+    public static string RefreshToken(string refreshToken, string clientID, string clientSecret)
+    {
+        var request = (HttpWebRequest)WebRequest.Create("https://accounts.google.com/o/oauth2/token");
+        string postData = string.Format("client_id={0}&client_secret={1}&refresh_token={2}&grant_type=refresh_token", clientID, clientSecret, refreshToken);
+        var data = Encoding.ASCII.GetBytes(postData);
+
+        request.Method = "POST";
+        request.ContentType = "application/x-www-form-urlencoded";
+        request.ContentLength = data.Length;
+
+        using (var stream = request.GetRequestStream())
+        {
+            stream.Write(data, 0, data.Length);
+        }
+
+        var response = (HttpWebResponse)request.GetResponse();
+        var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+        return responseString;
+    }
+
     private static int GetRandomUnusedPort()
     {
         var listener = new TcpListener(IPAddress.Loopback, 0);
